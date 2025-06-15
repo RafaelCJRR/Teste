@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Câmara Municipal de Americana - Reclame Aqui</title>
+    <!-- Tailwind CSS para estilização -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Inter do Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Aplicando a fonte Inter como padrão */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Estilo para a barra de rolagem da tabela em telas pequenas */
+        .table-container::-webkit-scrollbar {
+            height: 8px;
+        }
+        .table-container::-webkit-scrollbar-thumb {
+            background-color: #cbd5e1;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- Cabeçalho -->
+    <header class="bg-white shadow-md">
+        <div class="container mx-auto px-6 py-4 flex items-center justify-between">
+            <div class="flex items-center space-x-4">
+                <!-- Ícone simples como no esboço -->
+                <svg class="w-12 h-12 text-blue-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h6m-6 4h6m-6 4h6"></path></svg>
+                <div>
+                    <h1 class="text-xl md:text-2xl font-bold text-blue-900">CÂMARA MUNICIPAL DE AMERICANA</h1>
+                    <p class="text-lg md:text-xl font-semibold text-gray-600">RECLAME AQUI</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <main class="container mx-auto px-4 sm:px-6 py-8">
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+            <!-- Container para a tabela com rolagem horizontal em telas pequenas -->
+            <div class="overflow-x-auto table-container">
+                <table class="min-w-full divide-y divide-gray-200">
+                    <thead class="bg-gray-50">
+                        <tr>
+                            <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Bairro</th>
+                            <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Rua</th>
+                            <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Problema</th>
+                            <th scope="col" class="px-6 py-3 text-center text-xs font-medium text-gray-500 uppercase tracking-wider">Status</th>
+                            <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Comentários do Vereador</th>
+                        </tr>
+                    </thead>
+                    <tbody class="bg-white divide-y divide-gray-200">
+                        <!-- Exemplo 1: Árvore na Fiação -->
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Jardim Guanabara</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Rua dos Jequitibás, 150</td>
+                            <td class="px-6 py-4 text-sm text-gray-900 max-w-xs">
+                                <p class="font-semibold">Galhos de árvore próximos à fiação elétrica.</p>
+                                <img src="https://placehold.co/300x200/e2e8f0/334155?text=Galhos+na+Fia%C3%A7%C3%A3o" 
+                                     onerror="this.onerror=null;this.src='https://placehold.co/300x200/e2e8f0/334155?text=Imagem+Indispon%C3%ADvel';"
+                                     alt="Imagem de galhos de árvore perto de fios elétricos" 
+                                     class="mt-2 rounded-md shadow-sm w-full h-auto">
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-center">
+                                <span class="px-3 py-1 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
+                                    ✅ Resolvido
+                                </span>
+                            </td>
+                            <td class="px-6 py-4 text-sm text-gray-500 max-w-sm">
+                                <p><strong>Vereador João Silva:</strong> "Prezados moradores, a situação foi reportada à companhia de energia, que realizou a poda segura dos galhos no dia 12/06. O problema está solucionado. Agradeço o contato."</p>
+                            </td>
+                        </tr>
+
+                        <!-- Exemplo 2: Esgoto Exposto -->
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Parque das Nações</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Rua Polônia, 412</td>
+                            <td class="px-6 py-4 text-sm text-gray-900 max-w-xs">
+                                <p class="font-semibold">Encanamento de esgoto exposto na calçada.</p>
+                                <img src="https://placehold.co/300x200/e2e8f0/334155?text=Esgoto+Exposto" 
+                                     onerror="this.onerror=null;this.src='https://placehold.co/300x200/e2e8f0/334155?text=Imagem+Indispon%C3%ADvel';"
+                                     alt="Imagem de um cano de esgoto exposto em uma calçada" 
+                                     class="mt-2 rounded-md shadow-sm w-full h-auto">
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-center">
+                                <span class="px-3 py-1 inline-flex text-xs leading-5 font-semibold rounded-full bg-yellow-100 text-yellow-800">
+                                    🟡 Em Análise
+                                </span>
+                            </td>
+                            <td class="px-6 py-4 text-sm text-gray-500 max-w-sm">
+                                <p><strong>Vereadora Maria Souza:</strong> "Recebemos a notificação sobre o encanamento. Já acionamos a equipe de saneamento para avaliar a complexidade do reparo. Manteremos os moradores informados sobre os próximos passos."</p>
+                            </td>
+                        </tr>
+                        
+                        <!-- Você pode adicionar mais linhas <tr> aqui para outras reclamações -->
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="bg-white mt-8">
+        <div class="container mx-auto px-6 py-4 text-center text-gray-500">
+            <p>&copy; 2025 Câmara Municipal de Americana. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
